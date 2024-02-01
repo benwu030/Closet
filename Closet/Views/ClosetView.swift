@@ -6,12 +6,10 @@
 //
 
 import SwiftUI
-let categories = ["Shirt","Jacket","Shoes","Jeans"]
 struct ClosetView: View {
     
-    @State private var searchText = ""
     private var VgridItemLayout = [GridItem(.adaptive(minimum: 200)),GridItem(.adaptive(minimum: 200))]
-
+    @State private var viewModel = ViewModel()
     var body: some View {
 
         NavigationStack{
@@ -21,14 +19,14 @@ struct ClosetView: View {
     //                Text("You are searching for \(searchText)")
                     LazyVGrid(columns: VgridItemLayout,spacing: 10){
                         ForEach((0...4), id: \.self){
-                            SquareCell(color:.black, width: 200,height: 200,text: categories[$0 % categories.count],cornerRaidus: 50)
+                            SquareCell(color:.black, width: 200,height: 200,text: viewModel.categories[$0 % viewModel.categories.count],cornerRaidus: 50)
                         }
                         
                     }
                 }
             }
             
-        }.searchable(text: $searchText,placement: .navigationBarDrawer,prompt: "Search for your clothes")
+        }.searchable(text: $viewModel.searchText,placement: .navigationBarDrawer,prompt: "Search for your clothes")
         
     }
 }

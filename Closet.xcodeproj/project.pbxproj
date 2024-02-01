@@ -19,8 +19,12 @@
 		FF0680DE2B6A232700D5BA19 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680DD2B6A232700D5BA19 /* SettingsView.swift */; };
 		FF0680E02B6A233700D5BA19 /* ClosetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680DF2B6A233700D5BA19 /* ClosetView.swift */; };
 		FF0680E32B6A23A600D5BA19 /* ClosetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680E22B6A23A600D5BA19 /* ClosetModels.swift */; };
-		FF0680E62B6A23D400D5BA19 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680E52B6A23D400D5BA19 /* HomeController.swift */; };
-		FF0680E92B6A2C7800D5BA19 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680E82B6A2C7800D5BA19 /* UIComponents.swift */; };
+		FF0680E62B6A23D400D5BA19 /* ClotheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680E52B6A23D400D5BA19 /* ClotheViewModel.swift */; };
+		FF0680E92B6A2C7800D5BA19 /* SquareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680E82B6A2C7800D5BA19 /* SquareCell.swift */; };
+		FF0680EB2B6B69CD00D5BA19 /* ClotheListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680EA2B6B69CD00D5BA19 /* ClotheListViewModel.swift */; };
+		FF0680ED2B6B6D3A00D5BA19 /* AddClotheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680EC2B6B6D3A00D5BA19 /* AddClotheViewModel.swift */; };
+		FF0680EF2B6B726000D5BA19 /* AddClotheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680EE2B6B726000D5BA19 /* AddClotheViewController.swift */; };
+		FF0680F22B6B775D00D5BA19 /* ClosetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0680F12B6B775D00D5BA19 /* ClosetViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +60,12 @@
 		FF0680DD2B6A232700D5BA19 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FF0680DF2B6A233700D5BA19 /* ClosetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetView.swift; sourceTree = "<group>"; };
 		FF0680E22B6A23A600D5BA19 /* ClosetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetModels.swift; sourceTree = "<group>"; };
-		FF0680E52B6A23D400D5BA19 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		FF0680E82B6A2C7800D5BA19 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		FF0680E52B6A23D400D5BA19 /* ClotheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotheViewModel.swift; sourceTree = "<group>"; };
+		FF0680E82B6A2C7800D5BA19 /* SquareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCell.swift; sourceTree = "<group>"; };
+		FF0680EA2B6B69CD00D5BA19 /* ClotheListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotheListViewModel.swift; sourceTree = "<group>"; };
+		FF0680EC2B6B6D3A00D5BA19 /* AddClotheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClotheViewModel.swift; sourceTree = "<group>"; };
+		FF0680EE2B6B726000D5BA19 /* AddClotheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClotheViewController.swift; sourceTree = "<group>"; };
+		FF0680F12B6B775D00D5BA19 /* ClosetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +116,8 @@
 		FF0680AE2B6A095A00D5BA19 /* Closet */ = {
 			isa = PBXGroup;
 			children = (
-				FF0680E72B6A23DA00D5BA19 /* Controllers */,
+				FF0680F02B6B726400D5BA19 /* Controller */,
+				FF0680E72B6A23DA00D5BA19 /* ViewModel */,
 				FF0680E42B6A23AE00D5BA19 /* Models */,
 				FF0680E12B6A235A00D5BA19 /* Views */,
 				FF0680AF2B6A095A00D5BA19 /* ClosetApp.swift */,
@@ -147,7 +156,7 @@
 		FF0680E12B6A235A00D5BA19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF0680E82B6A2C7800D5BA19 /* UIComponents.swift */,
+				FF0680F32B6B7D6B00D5BA19 /* UIComponents */,
 				FF0680DB2B6A231E00D5BA19 /* CameraView.swift */,
 				FF0680D92B6A1FD200D5BA19 /* HomeView.swift */,
 				FF0680DD2B6A232700D5BA19 /* SettingsView.swift */,
@@ -164,12 +173,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FF0680E72B6A23DA00D5BA19 /* Controllers */ = {
+		FF0680E72B6A23DA00D5BA19 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FF0680E52B6A23D400D5BA19 /* HomeController.swift */,
+				FF0680E52B6A23D400D5BA19 /* ClotheViewModel.swift */,
+				FF0680EA2B6B69CD00D5BA19 /* ClotheListViewModel.swift */,
+				FF0680EC2B6B6D3A00D5BA19 /* AddClotheViewModel.swift */,
+				FF0680F12B6B775D00D5BA19 /* ClosetViewModel.swift */,
 			);
-			path = Controllers;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF0680F02B6B726400D5BA19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF0680EE2B6B726000D5BA19 /* AddClotheViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF0680F32B6B7D6B00D5BA19 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FF0680E82B6A2C7800D5BA19 /* SquareCell.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,14 +331,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0680DE2B6A232700D5BA19 /* SettingsView.swift in Sources */,
-				FF0680E92B6A2C7800D5BA19 /* UIComponents.swift in Sources */,
+				FF0680E92B6A2C7800D5BA19 /* SquareCell.swift in Sources */,
 				FF0680DA2B6A1FD200D5BA19 /* HomeView.swift in Sources */,
+				FF0680EF2B6B726000D5BA19 /* AddClotheViewController.swift in Sources */,
 				FF0680E02B6A233700D5BA19 /* ClosetView.swift in Sources */,
 				FF0680E32B6A23A600D5BA19 /* ClosetModels.swift in Sources */,
-				FF0680E62B6A23D400D5BA19 /* HomeController.swift in Sources */,
+				FF0680E62B6A23D400D5BA19 /* ClotheViewModel.swift in Sources */,
+				FF0680F22B6B775D00D5BA19 /* ClosetViewModel.swift in Sources */,
 				FF0680B22B6A095A00D5BA19 /* ContentView.swift in Sources */,
 				FF0680B02B6A095A00D5BA19 /* ClosetApp.swift in Sources */,
 				FF0680DC2B6A231E00D5BA19 /* CameraView.swift in Sources */,
+				FF0680ED2B6B6D3A00D5BA19 /* AddClotheViewModel.swift in Sources */,
+				FF0680EB2B6B69CD00D5BA19 /* ClotheListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +509,7 @@
 				DEVELOPMENT_TEAM = Q52FN4887Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -506,6 +539,7 @@
 				DEVELOPMENT_TEAM = Q52FN4887Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
